@@ -1,4 +1,4 @@
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE  1
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00040         ; MOVEMOS AL BANCO 2
 0005   1703           00041         BSF     STATUS,RP1
 0006   1283           00042         BCF     STATUS,RP0
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE  2
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0025   0086           00093         MOVWF   PORTB  ; DEJAMOS LAS SALIDAS DEL PORTB EN 1 PARA Q ESTE LISTO PARA CUANDO SE APRIETE UNA
                              TECLA DEL TECLADO
 0026   0187           00094         CLRF    PORTC
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE  3
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
                       00135 
                       00136         ; ---- INTERRUPCIONES ----
 0043   3048           00137         MOVLW   0x48 ; PEIE Y RBIE SET
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE  4
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -234,7 +234,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0065                  00186 RETARDO_TECLAS 
 0065   158B           00187         BSF     INTCON,RBIE ; HABILITAMOS DE NUEVO LAS INTERRUPCIONES POR TECLADO
 0066   1010           00188         BCF     T1CON,TMR1ON ; APAGAMOS EL TIMER1
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE  5
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -293,7 +293,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00238         ; VERIFICAMOS QUE GUARDAMOS SOLO 10 VALORES
                       00239         ; SI YA GUARDAMOS NUEVE, VOLVEMOS A 0 - COMIENZA A SOBREESCRIBIR LOS VALORES VIEJOS 
                       00240         ; BUFFER CIRCULAR
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE  6
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -352,7 +352,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 00A2   300F           00288         MOVLW   0x0F
 00A3   0578           00289         ANDWF   TEMP,W ; UNIDAD - PRIMER NIBBLE
 00A4   00FC           00290         MOVWF   UNIDAD
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE  7
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -411,7 +411,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 00C7   344F           00341         RETLW   0x4F ; E
 00C8   3447           00342         RETLW   0x47 ; F
                       00343         
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE  8
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -468,7 +468,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00392         
                       00393         
 3FE4 3FFF             00394         END
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE  9
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE  9
 
 
 SYMBOL TABLE
@@ -527,7 +527,7 @@ BRG16                             00000003
 BRG2                              00000002
 BRG3                              00000003
 BRG4                              00000004
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE 10
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE 10
 
 
 SYMBOL TABLE
@@ -586,7 +586,7 @@ CCP2Y                             00000004
 CCPR1                             00000015
 CCPR1H                            00000016
 CCPR1L                            00000015
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE 11
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE 11
 
 
 SYMBOL TABLE
@@ -645,7 +645,7 @@ FSR                               00000004
 FVREN                             00000000
 GCEN                              00000007
 GIE                               00000007
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE 12
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE 12
 
 
 SYMBOL TABLE
@@ -704,7 +704,7 @@ NOT_PD                            00000003
 NOT_POR                           00000001
 NOT_RBPU                          00000007
 NOT_RC8                           00000006
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE 13
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE 13
 
 
 SYMBOL TABLE
@@ -763,7 +763,7 @@ PULSS                             00000003
 PWM1CON                           0000009B
 R                                 00000002
 RA0                               00000000
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE 14
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE 14
 
 
 SYMBOL TABLE
@@ -822,7 +822,7 @@ RETARDO_TECLAS                    00000065
 RP0                               00000005
 RP1                               00000006
 RSEN                              00000001
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE 15
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE 15
 
 
 SYMBOL TABLE
@@ -881,7 +881,7 @@ T1CKPS0                           00000004
 T1CKPS1                           00000005
 T1CON                             00000010
 T1GINV                            00000007
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE 16
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE 16
 
 
 SYMBOL TABLE
@@ -940,7 +940,7 @@ TRISC0                            00000000
 TRISC1                            00000001
 TRISC2                            00000002
 TRISC3                            00000003
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE 17
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE 17
 
 
 SYMBOL TABLE
@@ -999,7 +999,7 @@ W                                 00000000
 WCOL                              00000007
 WDTCON                            00000105
 WDTPS0                            00000001
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE 18
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE 18
 
 
 SYMBOL TABLE
@@ -1058,7 +1058,7 @@ _FOSC_EXTRC_NOCLKOUT              00003FFE
 _FOSC_HS                          00003FFA
 _FOSC_INTRC_CLKOUT                00003FFD
 _FOSC_INTRC_NOCLKOUT              00003FFC
-MPASM 5.87                      TP_FINAL.ASM   6-10-2022  18:24:09         PAGE 19
+MPASM 5.87                      TP_FINAL.ASM   6-10-2022  19:17:00         PAGE 19
 
 
 SYMBOL TABLE
